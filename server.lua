@@ -7,11 +7,11 @@ vRP = Proxy.getInterface("vRP")
 -- Besked i command prompt --
 
 
-RegisterCommand("skilt", function(source, args, rawCommand)
+RegisterCommand("badge", function(source, args, rawCommand)
   local source = source
   local user_id = vRP.getUserId({source})
   local svar = args[1]
-  if svar == "vis" then
+  if svar == "show" then
     if vRP.hasGroup({user_id,cfg.rank}) then
       TriggerClientEvent("magnus:visSkilt", source)
     end
