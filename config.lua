@@ -1,3 +1,3 @@
 cfg = {}
 
-cfg.rank = "Politi-Job" 
+cfg.rank = "Police-Job" 
